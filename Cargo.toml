@@ -1,0 +1,16 @@
+[package]
+name = "loopcon"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+cpal = "0.15.2"
+ctrlc = "3.4.0"
+ringbuf = "0.3.3"
+
+[profile.release]
+strip = true
+lto = true
